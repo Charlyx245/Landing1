@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gana365 Online - Bono de Bienvenida 100%</title>
+  <meta name="description" content="Obtén tu bono de bienvenida del 50% para nuevos usuarios en Casino Club" />
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: black;
+      color: white;
+    }
+
+    .main-container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .hero-section {
+      position: relative;
+      overflow: hidden;
+      padding: 2rem 1rem;
+      min-height: 100vh;
+    }
+
+    .background-layer {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+
+    .background-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.7;
+      position: absolute;
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.4), rgba(0,0,0,0.7));
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding-top: 4rem;
+    }
+
+    .logo {
+      width: 200px;
+      margin-bottom: 1.5rem;
+    }
+
+    .bonus-banner {
+      background: rgba(220, 38, 38, 0.8);
+      padding: 1rem 2rem;
+      margin-bottom: 1.5rem;
+      display: inline-block;
+      font-weight: bold;
+      transform: rotate(-2deg);
+      border-radius: 8px;
+      box-shadow: 0 0 20px rgba(220, 38, 38, 0.5);
+    }
+
+    .main-title {
+      font-size: 2rem;
+      background: linear-gradient(to right, #facc15, #ef4444, #facc15);
+      -webkit-background-clip: text;
+      color: transparent;
+      font-weight: 900;
+      margin-bottom: 1rem;
+    }
+
+    .sub-text {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    .whatsapp-button {
+      background: #25D366;
+      color: white;
+      font-size: 1.25rem;
+      padding: 1rem 2rem;
+      border-radius: 9999px;
+      border: 2px solid rgba(255,255,255,0.2);
+      box-shadow: 0 4px 20px #25D366;
+      cursor: pointer;
+      animation: pulse 2s infinite;
+      transition: background 0.3s;
+    }
+
+    .whatsapp-button:hover {
+      background: #128C7E;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.03); }
+      100% { transform: scale(1); }
+    }
+
+    .features {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .feature {
+      background: rgba(0, 0, 0, 0.6);
+      border: 1px solid rgba(234, 179, 8, 0.3);
+      padding: 1rem;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <section class="hero-section">
+      <div class="background-layer">
+        <img
+          class="background-img"
+          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DeWatermark.ai_1741300513472-gHyyggfaWC28OAMFAstZJxnpROjqf5.png"
+          alt="Mesa de ruleta de casino"
+        />
+        <div class="overlay"></div>
+      </div>
+      <div class="content">
+        <img
+          src="https://i.postimg.cc/pdvkPwpq/photo-2024-11-29-07-38-50-removebg-preview.png"
+          alt="Gana365 Online"
+          class="logo"
+        />
+        <div class="bonus-banner">100% BONUS DE BIENVENIDA PARA NUEVOS USUARIOS</div>
+        <h1 class="main-title">¡Envianos un Whatsapp Para crear tu cuenta!</h1>
+        <p class="sub-text">Minimo de carga: $ 1000</p>
+        <button class="whatsapp-button" onclick="openWhatsApp()">
+          <span>¡OBTENE TU BONO 100% HACIENDO CLICK ACA!</span>
+        </button>
+        <div class="features">
+          <div class="feature">🏆 Grandes Premios</div>
+          <div class="feature">🎁 Bonos Exclusivos</div>
+          <div class="feature">🕓 Atención 24hs</div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+    function openWhatsApp() {
+      const phone = '5491123456789'; // Cambiar por el número de tu equipo
+      const message = encodeURIComponent("¡Hola! Quiero activar mi bono del 100% en Gana365.");
+      window.open(`https://wa.me/${phone}?text=${message}`, '_blank');
+    }
+  </script>
+</body>
+</html>
