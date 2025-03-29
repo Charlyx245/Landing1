@@ -12,19 +12,23 @@
       font-family: 'Arial', sans-serif;
       background-color: black;
       color: white;
+      overflow: hidden; /* Deshabilita el scroll */
+      height: 100%; /* Asegura que ocupe toda la altura */
     }
 
     .main-container {
       display: flex;
       flex-direction: column;
-      min-height: 100vh;
+      height: 100vh; /* Usa viewport height en lugar de min-height */
+      overflow: hidden; /* Evita scroll interno */
     }
 
     .hero-section {
       position: relative;
       overflow: hidden;
       padding: 2rem 1rem;
-      min-height: 100vh;
+      height: 100vh; /* Altura fija igual al viewport */
+      box-sizing: border-box; /* Incluye padding en la altura */
     }
 
     .background-layer {
@@ -52,10 +56,15 @@
       z-index: 1;
       text-align: center;
       padding-top: 4rem;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 
     .logo {
-      width: 100px; /* Cambiado de 200px a 100px (50% menos) */
+      width: 100px;
       margin-bottom: 1.5rem;
     }
 
